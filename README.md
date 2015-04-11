@@ -17,17 +17,13 @@ and updating it.
 
 ## Use
 
-1. ```javascript
-var h = require('virtual-dom/h');
-var vdomRenderTo = require('vdom-render-to');
-```
+1. `var h = require('virtual-dom/h');`  
+   `var vdomRenderTo = require('vdom-render-to');`
 
 2. Select the DOM element that will be updated when rendering.  
-   *The element itself will be updated*, not just its children.  
-   ```javascript
-   var update = vdomRenderTo(element);
-   var vtree;
-   ```
+   The element itself will be updated, not just its children.  
+   `var update = vdomRenderTo(element);`  
+   `var vtree;`
 
 3. Do any processing necessary to generate the first virtual-dom tree (vtree).  
    `vtree = h('h1', 'hello world');`
